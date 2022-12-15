@@ -1,0 +1,57 @@
+{
+  "name": "mta-wiki-lookup",
+  "displayName": "mta-wiki-lookup",
+  "description": "Used to get info about functions and events on wiki.",
+  "publisher": "mtasa-wiki-lookup",
+  "version": "1.0.1",
+  "pricing": "Free",
+  "repository": "https://github.com/KOna115/mtasa-wiki-lookup",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "sponsor": {
+    "url": "https://www.buymeacoffee.com/kona115"
+  },
+  "activationEvents": [
+    "onLanguage:lua",
+    "onCommand:mta-wiki-lookup.browser",
+    "onCommand:mta-wiki-lookup.vscode-browser"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mta-wiki-lookup.browser",
+        "title": "MTA-Wiki: External lookup. (Browser)"
+      },
+      {
+        "command": "mta-wiki-lookup.vscode-browser",
+        "title": "MTA-Wiki: Internal lookup."
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-fetch": "^3.3.0",
+    "request": "^2.88.2"
+  }
+}
