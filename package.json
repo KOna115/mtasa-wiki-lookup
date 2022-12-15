@@ -1,9 +1,10 @@
 {
   "name": "mta-wiki-lookup",
-  "displayName": "mta-wiki-lookup",
+  "displayName": "MTA:SA Wiki Lookup",
   "description": "Used to get info about functions and events on wiki.",
   "publisher": "mtasa-wiki-lookup",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "icon": "images/mta-sa-wiki-lookup.png",
   "pricing": "Free",
   "repository": "https://github.com/KOna115/mtasa-wiki-lookup",
   "engines": {

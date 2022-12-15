@@ -27,6 +27,10 @@ There are no settings yet. Will be implemented in the future.
 
 ## Release Notes
 
+### 1.0.2
+
+Updated icon and display name on Marketplace.
+
 ### 1.0.1
 
 Optimized HTML element selection with Cheerio.
